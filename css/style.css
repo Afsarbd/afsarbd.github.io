@@ -1,0 +1,523 @@
+/*
+	Template Name: Mascote Animate
+	Version: 1.0.0
+	Last update:4 Sep 2015
+	Author: www.technotiers.com/afsar/portfolio
+ */
+
+/* Reset CSS*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+figure, figcaption, hgroup, 
+menu, nav, output, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-weight: normal;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+ul {
+	list-style-type: none;
+}
+@font-face {
+    font-family: CartoonistKooky;
+    src: url(../fonts/cartoonist_kooky.otf);
+}
+
+body {
+    font-size: 14px;
+    line-height: 20px;
+    background-image: url(../images/p5.png);
+    background-position: center;
+}
+
+a {
+	text-decoration:none;
+	color: #323232;
+	-webkit-transition:all .6s;
+	-moz-transition:all .6s;
+	transition:all .6s;
+}
+
+a:hover, a:focus {
+	text-decoration:none;
+	color: #0199e6;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin-bottom: 10px;
+}
+h2{
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 800;
+}
+h3{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   BUTTON STYLE
+   ========================================================================== */
+
+.btn {
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 0px;
+}
+
+.btn-primary {
+	background-color: #d34346;
+	border-color: #d34346;
+}
+
+.btn-primary.active, 
+.btn-primary.focus, 
+.btn-primary:active, 
+.btn-primary:focus, 
+.btn-primary:hover, 
+.open>.dropdown-toggle.btn-primary {
+	background-color: #c62f31;
+	border-color: #c62f31;
+}
+*{
+	transition:0.5s all;
+}
+p{
+	font-size: 16px;
+}
+.its_well{
+    font-weight: bold
+}
+/*Header style*/
+#header_section{
+	
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	
+.header_section{
+	display:none !important;
+}	
+.header_mobile_section{
+	display:block !important;
+	background-color: #00C4C2;
+	min-height: 98px;
+	box-shadow: 0px 8px 29px #888888;
+}
+
+
+}
+
+
+.header_section{
+    background-color: #00C4C2;
+    min-height: 98px;
+    box-shadow: 0px 8px 29px #888888;
+}
+.header_row{
+    padding-top: 9px;
+}
+
+.logo_title{
+	/* text-align:right; */
+}
+.logo_title h1{
+    font-size: 27px;
+    font-family: 'CartoonistKooky';
+    color: #f1f1f1;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-top: 9px;
+    line-height: 32px;
+}
+.datetime{}
+.datetime h2{
+    font-size: 21px;
+    font-family: 'CartoonistKooky';
+    color: #f1f1f1;
+    padding-top: 20px
+}
+.header_button{
+    padding-top: 12px;
+	margin-bottom:20px;
+}
+.header_button a button{
+    background: #F85959;
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.header_button a button:hover{
+	background:#f93737;
+}
+@media only screen and (min-width:768px){
+	.header_button,
+	.logo_title{
+		text-align:right;
+	}
+}
+
+/*padding-top*/
+.padding_top{
+	padding-top:20px;
+}
+/*Main Secton style*/
+.main_section{
+	padding-top:20px;
+}
+.single_mascot_img{}
+.single_mascot_img ul{
+    margin-top: -16px;
+    margin-left: 8px;
+}
+.video_part{
+    padding-left: 0px;
+    padding-right: 0px;
+	background-color:#000;
+}
+
+.video_part{
+    padding-top: 0px;
+}
+.video_part h1{
+    color: #fff;
+    top: 69px;
+    position: absolute;
+    font-weight: bold;
+    line-height: 48px;
+    font-size: 40px;
+    font-family: 'CartoonistKooky';
+}
+.embed-responsive{
+	width:100%;
+}
+.single_mascot_img ul li{}
+.single_mascot_img ul li a{
+    font-size: 22px;
+    color: #F78082;
+    font-weight: bold
+}
+/*Working element style*/
+.single_element{
+    width: 20%;
+    float: left;
+}
+/* add rr */
+.elements_logo{
+	display:block;
+	list-style:none;
+	padding-left:0;
+}
+
+.single_logo{
+	display:block;
+    width: 20%;
+    float: left;
+	border: 1px solid #ddd;
+}
+.single_logo img{
+	max-width:100%;
+}
+@media only screen and (max-width:767px){
+	.single_logo{
+		width:33.33%;
+	}
+}
+@media only screen and (max-width:560px){
+	.single_logo{
+		width:50%;
+	}
+}
+@media only screen and (max-width:380px){
+	.single_logo{
+		width:100%;
+	}
+}
+
+
+
+.working_elements{
+    background-color: #fff;
+	padding:10px;
+}
+.alada_working_elements h1{
+    color: #27a8cb;
+    font-weight: bold;
+    font-family: 'CartoonistKooky';
+    font-size: 28px;
+    padding: 10px;
+}
+.element_content{
+    border: 1px solid #ddd;
+}
+.element_content img{}
+/*Team Learn style*/
+.team_learning img{
+	padding-left:130px;
+	padding-top:10px;
+}
+.team_pic{}
+.team_pic img{}
+/*main text style*/
+.main_text{
+    background-color: #fff;
+    padding: 10px;
+}
+.pic_content{}
+.bvc_content{
+    padding-top: 12px;
+}
+.bvc_content p{
+    font-size: 16px;
+}
+.its_well{}
+.bvc_content ul{}
+.bvc_content ul li{
+    color: #f56767;
+    font-size: 18px;
+    line-height: 28px;
+}
+.john_doe_text{
+    padding-top: 15px;
+}
+.john_doe_text p{
+    line-height: 14px;
+    font-size: 16px;
+	font-family:'arial';
+	font-weight:bold;
+}
+.bvc_content ul li span{
+    color: #8ab711;
+    padding-right: 12px;
+    font-size: 22px;
+}
+.john_doe{
+	padding-top:10px;
+}
+.john_doe img{}
+.john_doe h3{}
+.only_content{
+	clear: both;
+    padding: 10px;
+}
+.only_content p{
+	line-height: 30px;
+	font-size:18px;
+	color: #272727;
+	font-family: 'arial';
+}
+.business_group{
+    background-image: url(../images/b_v_bg.jpg);
+    overflow: hidden;
+    margin-top: -10px;
+}
+.business_vector h1{
+    background-color: #42649e;
+    padding: 26px;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 56px;
+    font-family: 'CartoonistKooky';
+}
+/*Business group style*/
+
+.a_b_group{
+    background-image: url(../images/b_v_bg.jpg);
+    overflow: hidden;
+    margin-top: 26px;
+    clear: both;
+}
+.img_group{
+    background-color: #42649e;
+    height: 80px;
+	margin-bottom:30px;
+}
+.img_group ul{
+    display: block;
+    list-style: none;
+	padding-left: 30px
+}
+.img_group ul li{
+	float:left;
+}
+.img_group ul li a{
+    display: block;
+    padding: 10px 15px;
+}
+.a_b_g_pic{
+    overflow: hidden;
+}
+.fifthimg_indicator{
+   
+}
+/*Buz row style*/
+.the_buz{
+	background-color: #fff;
+    margin-top: 65px;
+}
+.the_buz_title{
+    padding: 19px;
+}
+.the_buz_title h3{
+	font-size: 25px;
+    color: #67c124;
+	font-family: 'arial';
+}
+.the_buz_title h2{
+	font-family: 'arial';
+}
+.single_the_buz{
+	text-align:center;
+	margin-bottom:30px;
+}
+@media only screen and (max-width:767px){
+	.single_the_buz{
+		margin-bottom:50px;
+	}
+}
+.name_title{
+	padding:10px;
+}
+.buz_quote p{
+    color: #5e5e5e;
+    font-family: 'arial';
+    font-weight: bold;
+    font-size: 17px;
+}
+.name_title p{
+    line-height: 8px;
+}
+.name_title p:last-child{
+	color:#67c124;
+}
+.name_title p:first-child{
+	color:#242424;
+}
+.buz_button{
+    margin-top: 20px;
+}
+.buz_button a{}
+.buz_button a button{
+    background-color: #fff;
+    padding: 15px 129px;
+    font-size: 18px;
+    border: 1px solid #fff;
+	color: #272727;
+	font-family:'arial';
+}
+.copy_right{
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/**/
+.header_mobile_section{
+	display:none;
+}
+/*Animated Business Group Style*/
+.business_animated{
+    background-image: url(../images/business_animated_bg.jpg);
+	margin-top:20px;
+}
+.svg_adobe{
+	font-family: 'CartoonistKooky';
+    color: #009cff;
+	padding-top: 31px;
+}
+.svg_adobe h1{
+	font-size:41px;
+    padding-right: 15px;
+}
+.svg_adobe p{
+    font-size: 29px;
+    padding-right: 107px;
+    padding-top: 11px;
+}
+.svg_adobe ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    padding-right: 258px;
+}
+.svg_adobe ul li{
+	float:right;
+}
+.svg_adobe ul li a{
+display: block;
+    padding: 15px 15px;
+}
+.svg_adobe ul li a img{}
+.small_group_chtr{
+	
+}
+.small_group_chtr{
+position:relative;
+}
+.small_group_chtr ul{}
+
+.small_group_chtr ul li {
+  padding-left: 15%;
+    padding-bottom: 75px;
+}
+.small_group_chtr ul li:first-child {
+    padding-left: 33%;
+}
+.small_group_chtr .big-man{
+    position: absolute;
+    z-index: 229;
+    top: -152px;
+	padding-left: 10%;
+}
+/*countdown style*/
+.datetime {
+    font-family: 'CartoonistKooky';
+    color: #fff;
+    font-size: 18px;
+}
+.simply-countdown{}
+.simply-countdown-one{}
+.simply-countdown-losange{}
+#simply-countdown-losange{}
+.simply-section{}
+.simply-days-section{
+	float:left
+}
+.simply-hours-section{
+	float:left
+}
+.simply-minutes-section{
+	float:left
+}
+.simply-seconds-section{
+	float:left
+}
+
+.same-cls{}
+.{}
+
+
+
+
+
+
+
